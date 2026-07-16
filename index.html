@@ -12,13 +12,15 @@
         header h1 { font-size: 2.8rem; color: #f59e0b; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         header p { color: #94a3b8; font-size: 1.1rem; }
         
-        .main-content { background: #1e293b; padding: 20px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); border: 1px solid #334155; margin-bottom: 25px; }
-        .main-content h2 { margin-bottom: 15px; color: #38bdf8; font-size: 1.5rem; }
+        .main-content { background: #1e293b; padding: 40px 20px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); border: 1px solid #334155; margin-bottom: 25px; }
+        .main-content h2 { margin-bottom: 20px; color: #38bdf8; font-size: 1.6rem; }
+        .info-text { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 30px; }
         
-        /* 100% working open-source responsive widget loader */
-        .live-score-box { width: 100%; border-radius: 8px; overflow: hidden; background: #111827; border: 1px solid #475569; margin-bottom: 25px; min-height: 460px; }
+        /* Fast Live Score Button CSS */
+        .live-btn { display: inline-block; background: linear-gradient(135deg, #ef4444, #dc2626); color: #ffffff; font-size: 1.3rem; font-weight: bold; padding: 15px 40px; border: none; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; text-transform: uppercase; margin-bottom: 15px; }
+        .live-btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(239, 68, 68, 0.6); }
         
-        .ad-leaderboard-container { width: 100%; max-width: 728px; min-height: 90px; margin: 25px auto; background: #0f172a; border: 2px dashed #475569; border-radius: 8px; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; }
+        .ad-leaderboard-container { width: 100%; max-width: 728px; min-height: 90px; margin: 35px auto 10px auto; background: #0f172a; border: 2px dashed #475569; border-radius: 8px; padding: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; }
         .ad-leaderboard-container span { font-size: 0.75rem; color: #64748b; margin-bottom: 5px; display: block; text-transform: uppercase; }
         
         footer { text-align: center; color: #64748b; font-size: 0.9rem; margin-top: 40px; }
@@ -29,22 +31,17 @@
     <div class="wrapper">
         <header>
             <h1>Cricket Updates</h1>
-            <p>24/7 Real-Time Live Cricket Scorecard & Ball-by-Ball Analysis</p>
+            <p>24/7 Real-Time Live Cricket Scorecard & Fast Ball-by-Ball Analysis</p>
         </header>
 
         <main class="main-content">
-            <h2>🔴 Current Live Matches & Scorecard</h2>
+            <h2>🔴 Live Match Scorecard</h2>
+            <p class="info-text">Click the button below to get instantaneous live scores, ball-by-ball commentary, and match schedules updates.</p>
             
-            <!-- FREE OPEN-SOURCE CRICKET WIDGET (NEVER BLOCKS) -->
-            <div class="live-score-box">
-                <iframe 
-                    src="https://scoreaxis.com" 
-                    width="100%" 
-                    height="460px" 
-                    frameborder="0" 
-                    scrolling="yes">
-                </iframe>
-            </div>
+            <!-- SAFE LIVE LINK BUTTON (NEVER BLOCKS) -->
+            <a href="https://cricbuzz.com" target="_blank" class="live-btn">
+                ⚡ Click Here For Live Score
+            </a>
             
             <!-- AAPKA ACTIVE 728x90 ADSTERRA AD SLOT -->
             <div class="ad-leaderboard-container">
